@@ -1,0 +1,100 @@
+body{
+  margin: 0;
+  background: linear-gradient(
+    to bottom right,
+    red, blue
+  );
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  flex-direction: column;
+}
+
+.score-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.score-container h2 {
+  margin-bottom: 10px;
+}
+
+.game {
+  width: 320px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0; 
+  padding: 0; 
+}
+.cell:nth-child(3n+1) {
+  border-left: none;
+}
+
+.cell:nth-child(-n+3) {
+  border-top: none;
+}
+
+.cell:after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+
+.x {
+  color: #FF6347;
+}
+
+.o {
+  color: #1E90FF;
+}
+
+.cell:hover {
+  background-color: #3333;
+}
+
+.new-game-button {
+  background-color: transparent;
+  border: 2px solid #333;
+  color: #000;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin-top: 20px;
+}
+
+.new-game-button:hover {
+  background-color: #333;
+  color: #fff;
+}
+.reset-score-button {
+  background-color: transparent;
+  border: 2px solid #333;
+  color: #000;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin-top: 20px;
+}
+
+.reset-score-button:hover {
+  background-color: #333;
+  color: #fff;
+}

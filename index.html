@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Tic Tac Toe</title>
+</head>
+<body>
+  <div class="game-container">
+    <h1 id="timer">Tiempo: 00:00:00</h1>
+    <div class="game">
+      <div class="cell" id="1" onclick="cellClick(0)"></div>
+      <div class="cell" id="2" onclick="cellClick(1)"></div>
+      <div class="cell" id="3" onclick="cellClick(2)"></div>
+      <div class="cell" id="4" onclick="cellClick(3)"></div>
+      <div class="cell" id="5" onclick="cellClick(4)"></div>
+      <div class="cell" id="6" onclick="cellClick(5)"></div>
+      <div class="cell" id="7" onclick="cellClick(6)"></div>
+      <div class="cell" id="8" onclick="cellClick(7)"></div>
+      <div class="cell" id="9" onclick="cellClick(8)"></div>
+    </div>
+  
+    <div class="button-container">
+      <button class="new-game-button" onclick="resetGame()">Nuevo Juego</button>
+      <button class="reset-score-button" onclick="resetScores()">Resetear Puntuaciones</button>
+    </div>
+    <div class="score-container">
+      <h2>Mejores Puntuaciones</h2>
+      <ul id="scores">
+        
+      </ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
